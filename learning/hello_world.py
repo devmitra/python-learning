@@ -24,6 +24,7 @@ def fibonacci(n): #generator function
       counter += 1
 f = fibonacci(5) #f is iterator object
 
+#Usage of Generator
 while True:
    try:
        print (next(f), end=" ")
@@ -31,6 +32,7 @@ while True:
        print ("\n")
        break
 
+# Generator : Generator of first N integers
 def firstN (n):
     num = 0;
     while num < n:
@@ -39,7 +41,17 @@ def firstN (n):
 
 fnew = firstN(8)
 print("First N \n")
-while n in fnew
+# for in loop using generator
+for n in fnew:
     print(n, end = " ")
+
+
+# Type Checking
+str1 = "This is a string"
+print("\nType of str1 is str? ", type(str1) is str)
+print("\n Type of str1:", type(str1))
+print("\n str1 is instance of:", isinstance(str1, str))
+#print("\n str1 is instance of:", isinstance(str1, (str, unicode)))
+
 
 input("\n\nPress the enter key to exit.")
