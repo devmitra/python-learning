@@ -124,4 +124,4 @@ print("[%s] is stripped and result = [%s]" % (stripString,stripString.strip()) )
 # Padding ljust() rjust()
 print("------- Testing : ljust() -------")
 str = "this is string example....wow!!!"
-print str.ljust(50, '*')
+print (str.ljust(50, '*'))
