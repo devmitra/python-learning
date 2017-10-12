@@ -4,6 +4,7 @@
 #!usr/bin/python3
 import sys
 
+print("---- Tutorial of Python String operations ----\n\n")
 # Print str struct
 print(" str \n")
 print(str)
@@ -62,7 +63,7 @@ print(triple)
 # length : length of the string
 print("------- Testing : len() -------")
 print("[%s] length: " % formatStr ,  len(formatStr))
-# count : String Inclusion with count of sub string
+# count : String Inclusion with count of sub string in side main string
 bigStr = 'Here I am, this is me, no where else you can find me'
 test1 = 'this is me'
 test2 = 'laba'
