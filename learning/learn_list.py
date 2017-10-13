@@ -2,24 +2,7 @@
 # Demo for basic Python list functionality
 # link : https://www.tutorialspoint.com/python3/python_lists.htm
 #!usr/bin/python3
-
-# Utility
-# Print Section Header and description with Format
-def printDes(sectionHeader, description = ""):
-    print("\n---- %s ----" % sectionHeader)
-    if description:
-        print(" %s" % description)
-        print("----------------------------------------------------------------")
-
-    print("\n")
-    return
-def strList(list, sep = " "):
-    #return "".join('{}'.format(k) for k in list).join(sep)
-    res = "[ "
-    for k in list:
-        res = res + "".join('{}'.format(k)) + sep
-    return res + "]"
-##############################################################
+from utility import *
 printDes("Tutorial of Python List operations", """The whole file contains small exaples of python list operations""")
 
 # Creating Few List
@@ -77,4 +60,55 @@ print("case2: From string:", str1, " => ", list(str1))
 
 # List - Methods
 printDes("Some Userful List methods")
+# append
+newFriend = "BB"
+print("1. append: %s appending %s  " % (strList(listOfFriends), newFriend))
+listOfFriends.append(newFriend)
+print("1. append: Result => ", listOfFriends)
+# count
+redundantList = ["Mango","Apple", "Banana", "Mango"]
+mango = "Mango"
+apple = "Apple"
+print("2. count: the count of %s in" % mango, redundantList, "is ", redundantList.count(mango))
+print("2. count: the count of %s in" % apple, redundantList, "is ", redundantList.count(apple))
+# extend
+def extendList(l1, l2):
+    l1.extend(l2)
+    return l1
+temp = list(listOfFriends)
+print("3. extend:", listOfFriends, ".extend(", redundantList, ") = ", extendList(temp, redundantList))
+# index
+laba = "Laba"
+lele = "Lele"
+print("4. index: index of %s in " % laba,listOfFriends, " is ", listOfFriends.index(laba))
+print("4. index: index of %s in " % lele,listOfFriends, " is ", listOfFriends.index(lele))
+# insert
+def insertInList(l, i, v):
+    l.insert(i,v)
+    return l
+blueberry = "Blueberry"
+temp = list(redundantList)
+print("5. insert: inserting %s at index 2 in " % blueberry,redundantList," => ", insertInList(temp, 2, blueberry))
+# pop
+temp = list(listRandom)
+print("6. pop: poping from ", listRandom," - ",temp.pop()," => ", temp)
+# remove
+bb = "BB"
+def removeFromList(list, item):
+    list.remove(item)
+    return list
+temp = list(listOfFriends)
+print("7. remove: removing %s from " % bb,temp," => ", removeFromList(listOfFriends, bb))
+# reverse
+temp = list(listNum)
+temp.reverse()
+print("8. reverse: reversing list", listNum, " => ", temp)
+# sort
+listNum2 = [7,6,1,9,5,3,4,11,0,31]
+temp = list(listNum2)
+temp.sort()
+print("9. sort: ", listNum2, " => ", temp)
+temp = list(listOfFriends)
+temp.sort()
+print("9. sort: ", listOfFriends, " => ", temp)
 print("\n\n---- END:LIST ----\n\n")
