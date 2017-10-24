@@ -19,4 +19,7 @@ def strList(list, sep = " "):
     for k in list:
         res = res + "".join('{}'.format(k)) + sep
     return res + "]"
+
+def printEnd():
+    printDes("END")
 ##############################################################
