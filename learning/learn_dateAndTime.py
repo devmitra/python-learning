@@ -4,9 +4,12 @@
 #!usr/bin/python3
 
 import time
+import calendar
 from utility import *
-printDes("TimeAndDate", "This is tutorial for time and date handling in python")
+printDes("Time,Date and Calender", "This is tutorial for time and date handling in python")
 
+
+printDes("Time and Date")
 # tick or epoch
 print("tick or epoch: Seconds since 1st JAN 1970: time.time() = ", time.time())
 
@@ -131,6 +134,23 @@ print("GMT Time of tuple", timeStr, " => ", gmtTimeStr)
 
 # ctime: Convert sec to local time string
 print("ctime: ", timeStr,"(", timeVal, ") => ", time.ctime(timeVal))
+
+printDes("Calender")
+yr2011 = calendar.calendar(2011)
+print("** 2011 **\n")
+print(yr2011)
+month12_2014 = calendar.month(2014,12)
+print("** Dec 2014 **\n")
+print(month12_2014)
+month11_1944 = calendar.month(1944,11)
+print("** Nov 1944 **\n")
+print(month11_1944)
+month12_1952 = calendar.month(1952,12)
+print("** Dec 1952 **\n")
+print(month12_1952)
+
+# weekday
+print("weekday : 02 N0V 1944 => ", calendar.weekday(1944,11,2))
 
 printEnd()
 ################################################################################
