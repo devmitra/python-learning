@@ -1,4 +1,8 @@
 # WebStrom IDE
+
+# Project and app level
+tmp/
+*.tmp.txt
 .idea/
 # Byte-compiled / optimized / DLL files
 __pycache__/
