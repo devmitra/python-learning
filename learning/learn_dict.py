@@ -23,6 +23,15 @@ dict3 = dict(dict1)
 del dict3["key1"]
 print("3. delete:remove key from dict: ", dict, " removing \"key1\" => ", dict3)
 
+# Read Not available values
+print("Reading not available key")
+try:
+    uval = dict1["keyX"]
+    print("uval = dict1[keyX] = ", uval)
+except KeyError:
+    print("keyX not available in dict1 ")
+
+
 # Userful built-in function
 printDes("Useful built-in function")
 # str
