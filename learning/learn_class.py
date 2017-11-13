@@ -1,9 +1,10 @@
 # File Name learn_class.py
 # Demo for Python class concepts
-# link : https://www.tutorialspoint.com/python3/python_tuples.htm
+# link : https://www.tutorialspoint.com/python3/python_classes_objects.htm
 #!usr/bin/python3
 
 from utility import *
+import operator
 
 printDes("Example of class: Developer")
 
@@ -138,6 +139,21 @@ class Vector:
     # __cmp__ is depricated in python3
 # end Vector
 
+# Data Hiding: name python variable with _ prefix. It will become private member
+# Class: Student
+class Student:
+    #_marks = 0
+    def __init__(self,marks):
+        self.__marks = marks
+    # End: __init__
+    # Getter/Setter: marks
+    def getMarks(self):
+        return self.__marks
+    def setMarks(self,mrks):
+        self.__marks = mrks
+    # End: Getter/Setter: marks
+# End: Laba
+
 
 # Functional Methods
 def useDeveloper():
@@ -209,10 +225,29 @@ def operatorOverloading():
     print(vadd, " == ", v3, " = ", vadd == v3)
 
     listVector = [v1, v3, v2]
-    newList = listVector.sort()
+    tmp = list(listVector)
+    tmp.sort()
 
-    print(listVector, ".sort() => ", newList)
+    print(strList(listVector), ".sort() => ", strList(tmp))
 # end operatorOverloading
 operatorOverloading()
+
+# Data Hiding Eample
+def dataHidingExample():
+    printDes("Data Hiding")
+    student = Student(15)
+    try:
+        print(" trying student.__marks = ", student.__marks)
+    except AttributeError as excp:
+        print("Expected AttributeError exception received: ", excp)
+    # End: try
+    print("Getting value through getter: student.getMarks() = ", student.getMarks())
+    student.setMarks(25)
+    print("Setting Value: student.setMarks(25) => student.getMarks() = ", student.getMarks())
+    
+    # Getting private value: obj._ClassName__pvtvar
+    print("Backdoor to get private value: student._Student.__marks = ", student._Student__marks)
+# End: dataHidingExample()
+dataHidingExample()
 
 printEnd()
