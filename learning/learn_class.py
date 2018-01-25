@@ -198,6 +198,12 @@ def useDeveloper():
     del dev5
     print("DIR: ", Developer.__dict__)
 
+    #6.
+    print('Type Checking')
+    print("dev4 is ", type(dev4))
+    print("dev4 is instance of ", type(dev4) is Developer)
+
+
 
 # End useDeveloper
 useDeveloper()
@@ -244,7 +250,7 @@ def dataHidingExample():
     print("Getting value through getter: student.getMarks() = ", student.getMarks())
     student.setMarks(25)
     print("Setting Value: student.setMarks(25) => student.getMarks() = ", student.getMarks())
-    
+
     # Getting private value: obj._ClassName__pvtvar
     print("Backdoor to get private value: student._Student.__marks = ", student._Student__marks)
 # End: dataHidingExample()

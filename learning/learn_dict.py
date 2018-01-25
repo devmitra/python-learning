@@ -32,6 +32,11 @@ except KeyError:
     print("keyX not available in dict1 ")
 
 
+printDes("Iteration of dict")
+for key, val in dict1.items():
+    print("Key: ", key)
+    print("Value:", val)
+
 # Userful built-in function
 printDes("Useful built-in function")
 # str

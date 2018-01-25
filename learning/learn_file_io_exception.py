@@ -31,7 +31,7 @@ fo.close()
 
 # Read File
 fr = open(filepath, "r")
-strr = fr.read(100)
+strr = fr.read(100) # read whole file strr = fr.read()
 print("The value of file @ ", filepath, " => ", strr)
 
 # Rename file

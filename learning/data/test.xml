@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<friends>
+    <friend type='pure gandu'>
+        <name>Laba</name>
+        <surname>Ballabh</surname>
+        <keys>
+            <key>gas</key>
+            <key>charano</key>
+            <key>Good Friend</key>
+        </keys>
+    </friend>
+    <friend type='pure dhobbaz'>
+        <name>Pungi</name>
+        <surname>Gupta</surname>
+        <keys>
+            <key>dhob</key>
+            <key>aro dhob</key>
+            <key>sobtai dhob</key>
+        </keys>
+    </friend>
+</friends>
