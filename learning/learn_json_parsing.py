@@ -37,4 +37,7 @@ print(dictObj)
 print("JSON String:")
 print(newJSONStr)
 
+newJSONStr1 = json.dumps(dictObj, sort_keys=True,indent=4)
+print("Pretty Printing:")
+print(newJSONStr1)
 printEnd()
