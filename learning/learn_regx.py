@@ -13,16 +13,16 @@ printDes("Regx: Regular Expression", "Regular expression class is used to classi
 # *********************
 # ASCII, A  => Makes several escapes like \w, \b, \s and \d match only on ASCII characters with the respective property.
 # DOTALL,S, re.S  => Matches any char including \n
-# IGNORECASE, I, re.I => ignore case 
+# IGNORECASE, I, re.I => ignore case
 # LOCALE, L, re.L => Do a locale-aware match
 # MULTILINE, M, re.M => Multi-line matching, affecting ^ and $
-# VERBOSE, X (for ‘extended’) => Enable verbose REs, which can be organized more cleanly and 
+# VERBOSE, X (for ‘extended’) => Enable verbose REs, which can be organized more cleanly and
 #                                understandably
-#   re.X => Permits "cuter" regular expression syntax. 
-#       It ignores whitespace (except inside a set [] or when escaped by a backslash) and 
-#       treats unescaped # as a comment marker.   
-#   re.U => Interprets letters according to the Unicode character set. 
-#           This flag affects the behavior of \w, \W, \b, \B. 
+#   re.X => Permits "cuter" regular expression syntax.
+#       It ignores whitespace (except inside a set [] or when escaped by a backslash) and
+#       treats unescaped # as a comment marker.
+#   re.U => Interprets letters according to the Unicode character set.
+#           This flag affects the behavior of \w, \W, \b, \B.
 
 # Patterns
 # *********************
@@ -98,7 +98,7 @@ def example6():
     text2 = "ablaba"
     print("Example6:", text1,"match ", rgx," => ", re.match(rgx, text1, re.M | re.I))
     print("Example6:", text2,"match ", rgx," => ", re.match(rgx, text2, re.M | re.I))
-    
+
     rgx = r'a{2,}\w'
     text1 = "aalaba"
     text2 = "ablaba"
@@ -106,7 +106,7 @@ def example6():
     print("Example6:", text1,"match ", rgx," => ", re.match(rgx, text1, re.M | re.I))
     print("Example6:", text2,"match ", rgx," => ", re.match(rgx, text2, re.M | re.I))
     print("Example6:", text3,"match ", rgx," => ", re.match(rgx, text3, re.M | re.I))
-    
+
     rgx = r'a{2,5}\w'
     text1 = "aalaba"
     text2 = "ablaba"
@@ -116,7 +116,7 @@ def example6():
     print("Example6:", text2,"match ", rgx," => ", re.match(rgx, text2, re.M | re.I))
     print("Example6:", text3,"match ", rgx," => ", re.match(rgx, text3, re.M | re.I))
     print("Example6:", text4,"match ", rgx," => ", re.match(rgx, text4, re.M | re.I))
-    
+
 # End example6
 example6()
 
@@ -131,10 +131,4 @@ example6()
 # ^ => Start of strings
 # $ => End of strings
 # \ => inhibit the "specialness" of a character.
-
-
-
-
-
-
-
+# re.escape(str) => to create regx from string

@@ -14,6 +14,10 @@ else:
    print ("Answer")
    print ("False")
 
+# Foor loop
+for x in range(0,10):
+    print("For Loop : ", x)
+
 # Generator
 def fibonacci(n): #generator function
    a, b, counter = 0, 1, 0

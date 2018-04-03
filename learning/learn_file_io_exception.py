@@ -57,4 +57,10 @@ os.rmdir("./tmp/gas")
 wd = os.getcwd()
 print("Current working dir => ", wd)
 
+# Listing Dir
+itemsDir = os.listdir("./")
+print("content of current dir")
+print(itemsDir)
+
+
 printEnd()

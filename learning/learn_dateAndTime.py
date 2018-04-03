@@ -83,6 +83,10 @@ print("String From Time with format - %s" % formatStr, "[", anotherTime,"] => ",
 strVal = time.strftime(formatStr, timeTupleFromTuple)
 print("String From Time (tupTime) with format - %s" % formatStr, "[", timeTupleFromTuple,"] => ", strVal)
 
+formatStr = "%m%d%Y"
+strVal = time.strftime(formatStr, time.localtime())
+print("\nLocal: String From Time (tupTime) with format - %s" % formatStr, "[", time.localtime(),"] => ", strVal)
+
 
 # Time from string
 # %a − abbreviated weekday name

@@ -27,4 +27,6 @@ print(labaGreets("Kutta"))
 # Using testModule function
 testModule.Test1()
 
+testModule.Laba.testLaba()
+
 printEnd()

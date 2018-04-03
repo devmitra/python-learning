@@ -20,6 +20,10 @@ c = str1[0]
 print("\n First char of str1 = ", c)
 print("\n Type of c =", type(c))
 
+# update last String
+ss = str1[0:len(str1) - 1]
+print("\n Update :", ss)
+
 # Get SubString till index  : Operator: [:index]
 sub6 = str1[:6]
 print("\n SubString till index:6, sub6 = ", sub6)
