@@ -3,7 +3,7 @@
 # link : https://www.tutorialspoint.com/python3/python_lists.htm
 #!usr/bin/python3
 from utility import *
-printDes("Tutorial of Python List operations", """The whole file contains small exaples of python list operations""")
+printDes("Tutorial of Python List operations", """The whole file contains small examples of python list operations""")
 
 # Creating Few List
 listNum = [0,1,2,3,4,5,6,7,8,9]
@@ -18,11 +18,13 @@ print(strList(listOfFriends))
 
 # Getting value from List
 printDes("Accessing List")
-print("case1: Get single item : lisntNum[3] = ", listNum[3])
+print("case1: Get single item : listNum[3] = ", listNum[3])
 print("case2: Get sub sequence: listNum[1:5] = ", listNum[1:5])
+print("case3: Get sub sequence from index: listNum[:5] = ", listNum[:5])
+print("case3: Get sub sequence from index: listNum[5:] = ", listNum[5:])
 # Update
 printDes("Update list item")
-print("case1: upldate: before update: listRandom: %s" % strList(listRandom))
+print("case1: before update: listRandom: %s" % strList(listRandom))
 listRandom[2] = "y"
 print("case1: after update: listRandom: %s" % strList(listRandom))
 # Delete
@@ -31,7 +33,7 @@ print("case1: delete: before delete: listRandom: %s" % strList(listRandom))
 del listRandom[2]
 print("case1: delete: after delete: listRandom: %s" % strList(listRandom))
 # String operations
-printDes("Some string operations", "Some basic sring ops")
+printDes("Some string operations", "Some basic string ops")
 printDes("Length")
 print("Length of the %s is " % strList(listOfFriends), len(listOfFriends))
 printDes("Membership")
@@ -41,7 +43,7 @@ printDes("Repetition")
 smallList = [2,7]
 print("%s * 3 = " % (smallList), smallList * 3)
 # Indexing, Slicing
-printDes("Indexing, Slicing", "Sama as string")
+printDes("Indexing, Slicing", "Same as string")
 printDes("Indexing")
 print("case1: Indexing: Positive value indexing: index 2 of %s is ", strList(listOfFriends), listOfFriends[2])
 print("case2: Indexing: Negative value indexing: index -2 of %s is ", strList(listOfFriends), listOfFriends[-2])
@@ -59,7 +61,7 @@ str1 = "Ye bik gayi hai gormint"
 print("case2: From string:", str1, " => ", list(str1))
 
 # List - Methods
-printDes("Some Userful List methods")
+printDes("Some Useful List methods")
 # append
 newFriend = "BB"
 print("1. append: %s appending %s  " % (strList(listOfFriends), newFriend))

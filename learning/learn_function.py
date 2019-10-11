@@ -41,6 +41,8 @@ def BAAP_V2(top = "Babin", *others):
     print("BAAP(Boro Loker Aalida Pola community): Other members => ", others)
 
 BAAP_V2("Babin", "Abhra", "Samrat", "Subhra")
+BAAP_V2("Pungi", "Kutta")
+BAAP_V2()
 BAAP_V2(0,"Abhra", "Laba")
 
 # Lambda function: Inline function

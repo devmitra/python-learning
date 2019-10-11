@@ -5,7 +5,7 @@
 
 import smtplib
 
-sender = 'ios.dev.mitra85@gmail.com'
+sender = 'developer.mitra85@gmail.com'
 receivers = ['mitra.pushan@gmail.com']
 
 message = """From: Pushan Test <%s>
@@ -21,7 +21,7 @@ try:
    smtpObj.ehlo()
    smtpObj.starttls()
    smtpObj.ehlo()
-   smtpObj.login("ios.dev.mitra85@gmail.com", "123@Mitra")
+   smtpObj.login("developer.mitra85@gmail.com", "123@Mitra#1")
    smtpObj.sendmail(sender, receivers[0], message)
    smtpObj.close()
    print ("Successfully sent email")

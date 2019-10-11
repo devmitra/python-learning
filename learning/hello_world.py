@@ -50,6 +50,8 @@ print("First N \n")
 for n in fnew:
     print(n, end = " ")
 
+# membership in sequence
+print("\n5 in ", 5 in list(firstN(10)))
 
 # Type Checking
 str1 = "This is a string"
